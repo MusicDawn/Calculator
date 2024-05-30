@@ -12,15 +12,19 @@
   <body>
     <h1>My Wana_Be Calculator</h1>
     <div id="container">
-      <input type="text" id="number1" />
+      <input type="number" id="number1" />
       <br />
-      + <br />
-      <input type="text" id="number2" />
+      <select>
+        <option value="+">+</option>
+        <option value="-">-</option>
+      </select>
       <br />
-      = <br />
-      <input type="text" id="result" disabled />
+      <input type="number" id="number2" />
+      <br />
+      <button onclick="calculate()">=</button>
+      <br />
+      <input type="number" id="result" disabled />
       <br /><br />
-      <button onclick="calculate()">Calculate</button>
     </div>
   </body>
 
